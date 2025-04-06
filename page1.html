@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Traffic Challan Payment</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f3f4f6;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #1f2937;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .container {
+      max-width: 800px;
+      margin: 30px auto;
+      background-color: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+      color: #1f2937;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    input[type="text"], input[type="email"] {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+    .violation-details {
+      margin-top: 20px;
+    }
+    .violation-details img {
+      max-width: 100%;
+      height: auto;
+      border: 2px solid #ccc;
+      margin-top: 10px;
+      border-radius: 10px;
+    }
+    .pay-button {
+      margin-top: 30px;
+      text-align: center;
+    }
+    button {
+      padding: 12px 24px;
+      background-color: #10b981;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #059669;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🚦 Traffic Challan Portal</h1>
+    <p>Pay Your Fine Securely</p>
+  </header>
+
+  <div class="container">
+    <h2>Login to View & Pay Challan</h2>
+    <form>
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" placeholder="Enter your full name" required>
+
+      <label for="email">Email ID:</label>
+      <input type="email" id="email" placeholder="Enter your email address" required>
+
+      <div class="violation-details">
+        <h3>🚨 Violation Details</h3>
+        <p><strong>Violation:</strong> Eating While Driving</p>
+        <p><strong>Date:</strong> 2025-04-06</p>
+        <p><strong>Fine Amount:</strong> ₹500</p>
+        <p><strong>Status:</strong> Pending</p>
+        <h4>Evidence Photo:</h4>
+        <img src="eating_violation_sample.jpg" alt="Violation Evidence">
+
+        <h4>Previous Records:</h4>
+        <ul>
+          <li>Talking on phone - 2025-03-20 - ₹1000</li>
+          <li>Drowsiness detected - 2025-02-15 - ₹750</li>
+        </ul>
+      </div>
+
+      <div class="pay-button">
+        <button type="button" onclick="alert('✅ Payment Successful! Your challan has been cleared.')">Pay Fine Now</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
